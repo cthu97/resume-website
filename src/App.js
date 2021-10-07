@@ -8,24 +8,30 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Header from "./Header";
 
 function App() {
   return (
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route path="/home">
+            <Header/>
             <Home />
           </Route>
-          <Route path="/projects" />
-          <Projects/>
+          <Route path="/projects">
+            <Header/>
+            <Projects />
+          </Route>
+          <Route path="/about">
+          <Header/>
+            <About />
+          </Route>
+          <Route path="/contact">
+          <Header/>
+            <Contact />
+          </Route>
         </Switch>
-        <Route path="/about">
-          <About/>
-        </Route>
-        <Route path="/contact">
-          <Contact/>
-        </Route>
       </Router>
     </>
   );

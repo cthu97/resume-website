@@ -26,16 +26,42 @@ h2 {
   padding: 0.08em;
 }
 
-.projects {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
+.left {
+  display: inline-block;  
+  vertical-align:top; 
+  background-color:gray;
+  width:80%;
 }
 
+#dog {
+  float: left;
+  width:30%;
+  height:30%;
+}
+
+.left img {
+  float: right;
+  width:50%;
+}
+.description {
+  display:inline-block;
+  padding:5em;
+  color:black;
+}
+
+.right {
+  display: inline-block;  
+  vertical-align:top; 
+  background-color: white;
+  width:80%;;
+}
+
+.right img {
+  float:left;
+  width:60%;
+  height:auto;
+}
 .projectPics {
-  height: 30em;
   width: auto;
   padding: 0.8em;
 }

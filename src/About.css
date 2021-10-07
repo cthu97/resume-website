@@ -1,0 +1,31 @@
+header {
+  margin: 2em;
+}
+
+header a {
+  text-decoration: none;
+  border: 2px solid #50a9d1;
+  padding: 0.8em;
+  color: black;
+}
+
+.skills span {
+  border: 1px solid #50a9d1;
+  margin-right: 10px;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  color: black;
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    flex-direction: column;
+    align-items: justify;
+    margin-left: 45%;
+  }
+}
