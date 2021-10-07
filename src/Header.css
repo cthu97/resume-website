@@ -1,0 +1,62 @@
+* {
+  font-family: "Roboto";
+}
+
+head {
+  display: flex;
+  background-color: #ba3421;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  color: white;
+  background-color: #ba3421;
+  justify-content: space-evenly;
+}
+
+.link {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ba3421;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.pfp {
+  width: 20em;
+  height: 20em;
+  margin-top: 0.6%;
+  border-radius: 2em;
+  padding: 0.35em;
+  border: white solid 2px;
+}
+
+h1 {
+  box-shadow: 0.2em 0 0 white;
+  margin: 5em;
+  text-align: center;
+  width: 6.3em;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  animation: caret 0.5s step-end infinite alternate, type 1s steps(15, end);
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    box-shadow: 0.6em 0 0 transparent;
+  }
+}

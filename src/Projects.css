@@ -1,0 +1,45 @@
+* {
+  font-family: "Roboto";
+}
+
+#github {
+  border-radius: 50%;
+  margin-top: 1em;
+  margin-bottom: -2em;
+  width: 50px;
+}
+
+body {
+  background-color: white;
+  color: #ba3421;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  color: black;
+  font-size: 3em;
+  border: 1px solid black;
+  justify-content: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 0.08em;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+.projectPics {
+  height: 30em;
+  width: auto;
+  padding: 0.8em;
+}
+
+.names {
+  font-size: 2em;
+}
