@@ -27,39 +27,48 @@ h2 {
 }
 
 .left {
-  display: inline-block;  
-  vertical-align:top; 
-  background-color:gray;
-  width:80%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ba3421;
+  border-radius: 2em;
+  width: 80%;
 }
 
 #dog {
-  float: left;
-  width:30%;
-  height:30%;
+  float: right;
+  width: 30%;
+  height: 30%;
+  border-radius: 3em;
 }
 
 .left img {
   float: right;
-  width:50%;
+  width: 50%;
+  border-radius: 3em;
 }
 .description {
-  display:inline-block;
-  padding:5em;
-  color:black;
+  display: inline-block;
+  padding: 5em;
+  color: black;
+}
+
+.description a {
+  color: black;
+
+  padding: 10px;
 }
 
 .right {
-  display: inline-block;  
-  vertical-align:top; 
+  display: inline-block;
+  vertical-align: top;
   background-color: white;
-  width:80%;;
+  width: 80%;
 }
 
 .right img {
-  float:left;
-  width:60%;
-  height:auto;
+  float: left;
+  width: 80%;
+  border-radius: 3em;
 }
 .projectPics {
   width: auto;

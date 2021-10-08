@@ -1,23 +1,34 @@
-import React from "react";
-import "./fader.css";
+import React, {useState, useRef, useEffect} from 'react';
+import './fader.css';
 
-function FadeInSection(props) {
-  const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
+export default function FadeInSection(props) {
+  const [isVisible, setVisible] = useState(false);
+
+  const domRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      // In your case there's only one element to observe:
+      if (entries[0].isIntersecting) {
+        // Not possible to set it back to false like this:
+        setVisible(true);
+
+        // No need to keep observing:
+        observer.unobserve(domRef.current);
+      }
     });
+
     observer.observe(domRef.current);
+
+    return () => observer.unobserve(domRef.current);
   }, []);
+
   return (
     <div
-      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
+      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
     >
       {props.children}
     </div>
   );
 }
-
-export default FadeInSection;
