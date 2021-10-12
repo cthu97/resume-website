@@ -16,8 +16,7 @@ const About = () => {
         </a>
       </header>
       <h3 className="about">
-        A passionate full-stack web developer who discovered the joy of
-        programming.
+        A passionate full-stack web developer who loves coding and solving problems.
       </h3>
       <p> I am interested in and welcome any web development opportunities.</p>
   
